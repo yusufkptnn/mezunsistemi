@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Porsuk Meslek Yüksekokulu Mezun Bilgi Sistemi Kayıt Formu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Mezun Bilgi Sistemi Kayıt Formu</h1>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="name">AD-SOYAD :</label>
+      <input type="text" class="form-control" id="name" placeholder="Adınız Soyadınız" name="name">
+    </div>
+    <div class="form-group">
+      <label for="name">TCKN :</label>
+      <input type="name" class="form-control" id="name" placeholder="TC Kimlik Numaranız" name="name">
+    </div>
+    <div class="form-group">
+        <label for="email">E-MAİL :</label>
+        <input type="email" class="form-control" id="name" placeholder="Email Adresiniz" name="email">
+      </div>
+      <div class="form-group">
+        <label for="name">TEL-NO :</label>
+        <input type="tel" class="form-control" id="name" placeholder="Telefon Numaranız" name="name">
+      </div>
+      <div class="form-group">
+        <label for="name">DOĞUM TARİHİ :</label>
+        <input type="date" class="form-control" id="name" placeholder="Doğum Tarihiniz" name="date">
+      </div>
+      <div class="form-group">
+        <label for="name">CİNSİYET :</label>
+        <div class="radio">
+            <label><input type="radio" name="optradio" checked><b>Erkek</b></label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio"><b>Kadın</b></label>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="name">BÖLÜM :</label>
+        <div class="radio">
+            <label><input id="level" type="radio" name="optradio" checked><b>BASIM VE YAYIM TEKNOLOJİLERİ</b></label>
+          </div>
+          <div class="radio">
+            <label><input id="level" type="radio" name="optradio"><b>BİLGİSAYAR PROGRAMCILIĞI</b></label>
+          </div>
+          <div class="radio">
+            <label><input id="level" type="radio" name="optradio"><b>ELEKTRİK ENERJİSİ ÜRETİM, İLETİM VE DAĞITIMI</b></label>
+          </div>
+          <div class="radio">
+            <label><input id="level" type="radio" name="optradio"><b>GRAFİK TASARIMI</b></label>
+          </div>
+          <div class="radio">
+            <label><input id="level" type="radio" name="optradio"><b>İNSANSIZ HAVA ARACI TEKNOLOJİSİ VE OPERATÖRLÜĞÜ</b></label>
+          </div>
+          <div class="radio">
+            <label><input id="level" type="radio" name="optradio"><b>MAKİNE RESİM VE KONSTRÜKSİYONU</b></label>
+          </div>
+          <div class="radio">
+            <label><input id="level" type="radio" name="optradio"><b>MEKATRONİK</b></label>
+          </div>
+          <div class="radio">
+            <label><input id="level" type="radio" name="optradio"><b>RADYO VE TELEVİZYON TEKNOLOJİSİ</b></label>
+          </div>
+          <div class="radio">
+            <label><input id="level" type="radio" name="optradio"><b>YAPI DENETİMİ</b></label>
+          </div>
+      </div>
+    <button type="submit" class="btn btn-default"><a href="index.html#centermsg">Onayla</a></button>
+  </form>
+</div>
+<footer class="text-center">
+    <br>
+    <p><a href="https://pmyo.eskisehir.edu.tr" data-toggle="tooltip" title="Porsuk Meslek Yüksekokulu Ana Sayfası">Porsuk Meslek Yüksekokulu Web Sitesi</a></p>
+    <br>
+    <img src="main-logo.png">
+    <br><br>
+<style>
+    body{
+        background-color: #ffffff85;
+        color: #470407;
+        font-weight: bold;
+        user-select: none;
+        font-family: Paytone,sans-serif;
+    }
+    h1{
+        text-align: center;
+    }
+    #name{
+        box-shadow: 0 0 4px rgba(73, 9, 9, 0.993);
+    }
+    .btn.btn-default{
+        background-color: #555353;
+        color: white;
+    }
+    .btn.btn-default a{
+      text-decoration: none;
+      color: white;
+    }
+    .btn.btn-default:hover{
+        background-color: #470407;
+        color: white;
+    }
+    .text-center{
+        background-color: #470407;
+        color: white;
+        background-size: 100% 100%;
+    }
+    .text-center p{
+        margin: 0;
+        padding: 0;
+    }
+    .text-center a{
+        color: white;
+        text-align: center;
+        font-family: Paytone,sans-serif;
+        font-weight: bold;
+    }
+    .text-center a:hover{
+        color: #555353;
+    }
+</style>
+</body>
+</html>

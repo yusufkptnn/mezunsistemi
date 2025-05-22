@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Porsuk Meslek Yüksekokulu Mezun Platformu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Paytone, sans-serif;
+    color: #470707;
+    background-color: #ffffff;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+    user-select: none;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    width: 100%;
+    background-size: 100% 100%;
+    margin: auto;
+  }
+  .carousel-caption h3 {
+  color: #ffffff !important;
+   user-select: none;
+   font-family:Paytone,sans-serif;
+   position: relative;
+   text-align: center;
+   font-size: 40px;
+   bottom: 700px;
+   font-weight: bold;
+  }
+  .carousel-caption h4{
+    position: relative;
+    bottom: 720px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .carousel-caption h1{
+    position: relative;
+    bottom: 710px;
+    font-size: 60px;
+    color: #470707;
+    font-family: Paytone,sans-serif;
+    font-weight: bold;
+    user-select: none;
+  }
+  .carousel-caption p{
+    color: #05b8ff;
+    user-select: none;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .navbar {
+    font-family: Lato, sans-serif;
+    margin-bottom: 0;
+    background-color: #470707;
+    border: 0;
+    font-size: 15px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    font-weight: bold;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #ffffff !important;
+  }
+  .navbar-nav li a:hover {
+    color: #ffffff !important;
+    background-color: #3a3a3d !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #3a3a3d !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #470707 !important;
+  }
+  .dropdown-menu{
+    background-color: #470707;
+  }
+  .dropdown-menu li a {
+    color: #ffffff !important;
+    font-weight: bold;
+  }
+  .dropdown-menu li a:hover {
+    background-color: #333 !important;
+  }
+  footer {
+    background-color: #470707;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+  <style>
+    .fa {
+      padding: 0;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 20px 15px;
+      border-radius: 100%;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    
+    .fa-instagram {
+      background: #cc2448;
+      color: white;
+    }
+    #websitename{
+      user-select: none;
+    }
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img class="navbar-brand navbar-left" src="estuogo.png" width="60" height="60">
+      <a id="websitename" class="navbar-brand">Porsuk Meslek Yüksekokulu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">ANASAYFA</a></li>
+        <li><a href="#band">HAKKIMIZDA</a></li>
+        <li><a href="#announcementpage">DUYURULAR</a></li>
+        <li><a href="#contact">İLETİŞİM</a></li>
+        <li><a href="#centermsg">MBS GİRİŞ</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">DAHA FAZLA
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ETKİNLİKLER</a></li>
+            <li><a href="#">GALERİ</a></li> 
+            <li><a href="#">MEZUN YORUMLARI</a></li> 
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="bg.jpg" alt="eskisehir" width="1000" height="300">
+        <div class="carousel-caption">
+          <h4>Porsuk Meslek Yüksekokulu</h4>
+          <h1>MEZUN PLATFORMUNA</h1>
+          <h3>Hoşgeldiniz</h3>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="bg.jpg" alt="eskisehir" width="1000" height="300">
+        <div class="carousel-caption">
+          <h4>Porsuk Meslek Yüksekokulu</h4>
+          <h1>MEZUN PLATFORMUNA</h1>
+          <h3>Hoşgeldiniz</h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="bg.jpg" alt="eskisehir" width="1000" height="300">
+        <div class="carousel-caption">
+          <h4>Porsuk Meslek Yüksekokulu</h4>
+          <h1>MEZUN PLATFORMUNA</h1>
+          <h3>Hoşgeldiniz</h3>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="bg.jpg" alt="eskisehir" width="1000" height="300">
+        <div class="carousel-caption">
+          <h4>Porsuk Meslek Yüksekokulu</h4>
+          <h1>MEZUN PLATFORMUNA</h1>
+          <h3>Hoşgeldiniz</h3>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Önceki</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Sonraki</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3 class="text-center"><b>HAKKIMIZDA</b></h3>
+  <p><b>Değerli Öğrenciler!</b></p>
+  <p><b>Eskişehir Teknik Üniversitesi ya da kısaca ESTÜ, Türkiye'deki bir devlet üniversitesidir. 18 Mayıs 2018 tarihinde Anadolu Üniversitesine ait çeşitli eğitim birimlerinin aktarılmasıyla iki farklı yerleşkede beş fakülte, üç enstitü ve iki meslek yüksekokulu ile Eskişehir'de eğitim vermeye başlamıştır.Türkiye'nin önde gelen üniversiteleri arasına kısa sürede adını yazdırmayı başarmıştır.Şu anda bulunmuş olduğunuz bu internet sayfası ise öğrencilerimize gösterdiğimiz kıymetin bir parçasıdır.Porsuk Meslek Yüksekokulu Mezun Bilgi Platformu'nun amacı, mezun olan öğrencilerimizle iletişim içinde olmak ve onlara meslek hayatlarında hem referans olmak hem de iş sahibi olmalarında kolaylık sağlamaktır.Ayrıca mezun olan öğrencilerimize hala üniversitemizin bir parçası olduklarını göstermek ve her daim yanlarında olduğumuzu hissettirmekte amaçlarımızın arasındadır.MSB sistemi ile öğrencilerimiz kolaylıkla sisteme erişim sağlayabilir ve hemen kendilerine sunulan bu imkanlardan yararlanabilirler.</b></p>
+  <br>
+</div>
+<style>
+  #band h3,p{
+    font-family: Paytone,sans-serif;
+    user-select: none;
+  }
+</style>
+<div id="announcementpage" class="announcement">
+      <h3 class="text-center"><b>DUYURULAR</b></h3>
+  <ul>
+      <img src="main-logo.png" width="150"><br />
+      <li><a href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/estu-ogrenci-spor-etkinlikleri-voleybol-4hafta-puan-durumu">ESTÜ Öğrenci Spor Etkinlikleri Voleybol 4.Hafta Puan Durumu</a></li>
+      <li><a href="https://www.eskisehir.edu.tr/tr/Etkinlik/Detay/istatistik-bolumu-lisansustu-seminerleri-">İstatistik Bölümü Lisansüstü Seminerleri</a></li>
+      <li><a href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/2024-2025-akademik-yili-eskisehir-teknik-universitesi-onlisans-lisans-programlarina-yurtdisindan-kabul-edilecek-ogrenciler-icin-uluslararasi-gecerliligi-olan-sinav-sonucuyla-diploma-notuyla-tr-yos-basvurulari2024-2025"> Akademik Yılı Eskişehir Teknik Üniversitesi Önlisans/Lisans Programlarına Yurtdışından Kabul Edilecek Öğrenciler İçin Uluslararası Geçerliliği Olan Sınav Sonucuyla/Diploma Notuyla/TR YÖS Başvuruları</a></li>
+      <li><a href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/estu-ogrenci-spor-etkinlikleri-voleybol-4hafta-puan-durumu">ESTÜ Öğrenci Spor Etkinlikleri Voleybol 4.Hafta Puan Durumu</a></li>
+      <li><a href="https://www.eskisehir.edu.tr/tr/Etkinlik/Detay/uretken-yapay-zeka-okuryazarligi-ve-komut-muhendisligi">Üretken Yapay Zeka Okuryazarlığı ve Komut Mühendisliği</a></li>
+  </ul>
+  <style>
+    .announcement.container.h3{
+      font-family: Paytone,sans-serif;
+    }
+    .announcement ul{
+      text-align: center;
+    }
+    .announcement ul li{
+      display: inline-block;
+      float: none;
+      width: 1000px;
+      padding: 5px;
+ }
+    .announcement ul li a{
+      color: #470707;
+      font-family: Paytone,sans-serif;
+      text-decoration: none;
+      text-align: center;
+    }
+    .announcement ul li a:hover{
+      color: #cc2448;
+    }
+  </style>
+</div>
+  <div id="contact" class="container">
+    <h3 class="text-center"><b>İLETİŞİM</b></h3>
+    <p class="text-center"><em>Bize ulaşın.</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Görüşleriniz bizim için önemlidir.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Eskişehir, Türkiye</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Tel: (0222) 321 35 50</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: info@eskisehir.edu.tr</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="İsim" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Yorumlarınız" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button id="sendbutton" class="btn pull-right" type="submit">Gönder</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+  <style>
+    #sendbutton:hover{
+    background-color: #470707;
+    color: #f1f1f1;
+    }
+    .form-control{
+      border-color: #470707;
+      box-shadow: 0 0 4px rgba(73, 9, 9, 0.993);
+    }
+  </style>
+<div id="centermsg" class="container">
+  <h3 class="text-center"><b>MBS GİRİŞ</b></h3>
+  <h2><b>Porsuk Meslek Yüksekokulu Mezun Bilgi Platformu'na Hoşgeldiniz.</b></h2>
+  <br>
+  <h5><b>Not:Sisteme @ogr.eskisehir.edu.tr uzantılı email adresinizle kayıt olmanız gerekmektedir.</b></h5>
+  <br>
+</div>
+  <style>
+    #centermsg h2,h5{
+    text-align: center;
+    user-select: none;
+    }
+  </style>
+</div>
+<div id="wrapper" class="wrapper">
+  <form action="">
+    <h1>Mezun Bilgi Sistemi</h1>
+    <div class="input-box">
+      <input type="email" placeholder="Email" required>
+      <i class='bx bxs-user'></i>
+    </div>
+    <div class="input-box">
+      <input type="password" placeholder="Password" required>
+      <i class='bx bxs-lock-alt' ></i>
+    </div>
+    <div class="remember-forgot">
+      <label><input type="checkbox">Beni Hatırla</label>
+      <a href="#">Şifremi Unuttum</a>
+    </div>
+    <button  type="submit" class="btn"><a id="loginbutton" href="mezunpage.html">Giriş</a></button>
+    <div class="register-link">
+      <p>Bir hesabınız yok mu? <a target="_blank" href="register.html">Kayıt Ol</a></p>
+    </div>
+  </form>
+</div>
+<style>
+.wrapper{
+  width: 480px;
+  margin: auto;
+  background: transparent;
+  border: 2px solid #470707;
+  backdrop-filter: blur(9px);
+  color: #470707;
+  border-radius: 12px;
+  padding: 50px 90px;
+  box-shadow: 0 0 10px rgba(73, 9, 9, 0.993);
+}
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+  user-select: none;
+}
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(73, 9, 9, 0.993);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #470707;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+  color: #470707;
+}
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forgot label input{
+  accent-color: #470707;
+  margin-right: 3px;
+
+}
+.remember-forgot a{
+  color: #470707;
+  text-decoration: none;
+}
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+.wrapper .btn{
+  width: 100%;
+  height: 45px;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(73, 9, 9, 0.993);
+  cursor: pointer;
+  font-size: 16px;
+  color: #470707;
+  font-weight: 600;
+  border: 2px solid rgba(73, 9, 9, 0.993);
+  text-decoration: none;
+}
+#loginbutton{
+  text-decoration: none;
+  color: #470707;
+}
+.wrapper .btn:hover{
+  color: #ffffff;
+  background-color: #cc2448;
+}
+.wrapper .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+
+}
+.register-link p a{
+  color: #470707;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover{
+  text-decoration: underline;
+}
+</style>
+<br>
+<br>
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="En Yukarı Gidin">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <img src="main-logo.png">
+  <p>Porsuk Meslek Yüksekokulu için hazırlanmıştır. <br><a href="https://www.eskisehir.edu.tr" data-toggle="tooltip" title="Porsuk Meslek Yüksekokulu Ana Sayfası">https://pmyo.eskisehir.edu.tr</a></p> 
+  <h2 id="baslık">Sosyal Medya Hesaplarımız</h2>
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/eskisehirteknikuniv" class="fa fa-facebook"></a>
+<a href="https://x.com/esteknikuniv" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/channel/UC-oGylb9E16KNqMnTP_kDoA" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/eskisehirteknikuniv/" class="fa fa-instagram"></a>
+</footer>
+<style>
+  #baslık{
+    text-align: center;
+    font-family: Paytone,sans-serif;
+    user-select: none;
+  }
+</style>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+</body>
+</html>
